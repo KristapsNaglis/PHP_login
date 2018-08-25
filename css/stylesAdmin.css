@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "SF Movie Poster";
+    src: url("../fonts/sf_movie_poster.ttf");
+}
+
+html , body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 65.2%;
+    font-family: 'SF Movie Poster', sans-serif;
+
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    background: url("../images/admin_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.content {
+    width: 20vw;
+    height: 10vh;
+
+    padding-left: Calc(50vw - 20vw / 2);
+    padding-top: Calc(50vh - 10vh / 2);
+
+    font-size: 5em;
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.logout {
+    text-transform: uppercase;
+}
+
+#logout:link {
+    color: #9b9b9b;
+    transition: .25s ease-in-out;
+}
+
+#logout:visited {
+    color: #9b9b9b;
+    transition: .25s ease-in-out;
+}
+
+#logout:hover {
+    color: #C3083F;
+    transition: .25s ease-in-out;
+}
